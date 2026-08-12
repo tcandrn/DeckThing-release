@@ -1,0 +1,18 @@
+{
+  "name": "deck-server",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@serialport/parser-readline": "^13.0.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "serialport": "^13.0.0",
+    "socket.io": "^4.7.2"
+  }
+}

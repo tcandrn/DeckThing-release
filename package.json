@@ -1,0 +1,25 @@
+{
+  "name": "deckthing",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A modular DIY stream deck interface",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "postinstall": "npm --prefix client install && npm --prefix server install && npm --prefix electron-builder install",
+    "setup:python": "node scripts/python.js -m pip install -r server/requirements.txt",
+    "dev": "concurrently -k -n server,client -c cyan,magenta \"npm --prefix server start\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build",
+    "start": "npm run build && npm --prefix server start",
+    "serve": "npm --prefix server start",
+    "test": "npm --prefix server test",
+    "test:python": "node scripts/python.js server/test_macro.py",
+    "engine": "node scripts/python.js --cwd server -m PyInstaller --onefile --noconsole --name macro macro.py",
+    "package": "npm run build && npm --prefix electron-builder run build-win"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

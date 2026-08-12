@@ -1,0 +1,40 @@
+{
+  "name": "deck-thing",
+  "version": "0.1.0",
+  "main": "main.js",
+  "description": "DIY Stream Deck",
+  "author": "tcandrn",
+  "license": "MIT",
+  "build": {
+    "appId": "com.deckthing.app",
+    "productName": "DeckThing",
+    "files": [
+      "**/*"
+    ],
+    "extraResources": [
+      "macro.exe"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "icon.png",
+      "signAndEditExecutable": false
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder",
+    "build-win": "if not exist .\\server\\src mkdir .\\server\\src && xcopy /E /I /Y ..\\client\\dist .\\client\\dist && xcopy /E /I /Y ..\\server\\shared .\\server\\shared && copy /Y ..\\server\\src\\Store.js .\\server\\src\\ && copy /Y ..\\server\\src\\SerialHandler.js .\\server\\src\\ && copy /Y ..\\server\\src\\config.js .\\server\\src\\ && copy /Y ..\\server\\src\\AuthStore.js .\\server\\src\\ && copy /Y ..\\server\\dist\\macro.exe .\\macro.exe && electron-builder"
+  },
+  "dependencies": {
+    "@serialport/parser-readline": "^13.0.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "serialport": "^13.0.0",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "electron": "^43.4.0",
+    "electron-builder": "^26.7.0"
+  }
+}
