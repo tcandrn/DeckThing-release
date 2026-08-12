@@ -14,7 +14,7 @@ Butonları bir Arduino'ya bağlayın, ardından her birini bir web kontrol panel
 > DeckThing tuş vuruşlarını yazılımla simüle eder ve **çoğu anti-cheat sistemi tarafından algılanır**. Çevrimiçi veya rekabetçi oyunlarda kullanmak hesabınızın yasaklanmasına yol açabilir. Verimlilik, yayın, tek oyunculu ve simülatör kullanımı için tasarlanmıştır.
 
 > [!NOTE]
-> Aktif geliştirme aşamasında olan alfa yazılımıdır. Bir sorunla karşılaşırsanız [bir sorun bildirin](https://github.com/tcandrn/DeckThing-app/issues).
+> Aktif geliştirme aşamasında olan alfa yazılımıdır. Bir sorunla karşılaşırsanız [bir sorun bildirin](https://github.com/tcandrn/DeckThing-release/issues).
 >
 > DeckThing tamamen yerel ağınızda çalışır ve hiçbir zaman internete bağlanmaz. Windows yerel ağ erişimi izni isteyebilir; kontrol panelinin sunucuya ulaşması için bu gereklidir.
 
@@ -53,8 +53,8 @@ Firmware, `BTN_` ifadesinin ardından Arduino pin numarasını gönderir; yani p
 Electron 43 gerektirdiği için Node.js 22.12 veya üstü, ayrıca 3.10 ile 3.14 arasında bir Python gerekir. PyInstaller henüz 3.15'i desteklemiyor.
 
 ```bash
-git clone https://github.com/tcandrn/DeckThing-app.git
-cd DeckThing-app
+git clone https://github.com/tcandrn/DeckThing-release.git
+cd DeckThing-release
 npm install
 npm run setup:python
 ```

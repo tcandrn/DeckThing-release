@@ -53,8 +53,8 @@ The firmware sends `BTN_` followed by the Arduino pin number, so pin 2 arrives a
 Requires Node.js 22.12 or newer, because Electron 43 does, and Python between 3.10 and 3.14. PyInstaller does not yet support 3.15.
 
 ```bash
-git clone https://github.com/tcandrn/DeckThing-app.git
-cd DeckThing-app
+git clone https://github.com/tcandrn/DeckThing-release.git
+cd DeckThing-release
 npm install
 npm run setup:python
 ```
