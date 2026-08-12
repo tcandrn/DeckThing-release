@@ -14,7 +14,7 @@ Wire buttons to an Arduino, then map each one to text, a hotkey, or a script fro
 > DeckThing simulates keystrokes in software and **will be detected by most anti-cheat systems**. Using it in online or competitive games may get your account banned. It is meant for productivity, streaming, single-player, and simulator use.
 
 > [!NOTE]
-> Alpha software under active development. If something breaks, [open an issue](https://github.com/tcandrn/DeckThing-app/issues).
+> Alpha software under active development. If something breaks, [open an issue](https://github.com/tcandrn/DeckThing-release/issues).
 >
 > DeckThing runs entirely on your local network and never connects to the internet. Windows may ask you to allow local network access; the dashboard needs it to reach the server.
 
