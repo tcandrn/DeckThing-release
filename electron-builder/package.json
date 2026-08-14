@@ -23,7 +23,7 @@
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder",
-    "build-win": "(if not exist .\\server\\src mkdir .\\server\\src) && xcopy /E /I /Y ..\\client\\dist .\\client\\dist && xcopy /E /I /Y ..\\server\\shared .\\server\\shared && copy /Y ..\\server\\src\\Store.js .\\server\\src\\ && copy /Y ..\\server\\src\\SerialHandler.js .\\server\\src\\ && copy /Y ..\\server\\src\\config.js .\\server\\src\\ && copy /Y ..\\server\\src\\AuthStore.js .\\server\\src\\ && copy /Y ..\\server\\dist\\macro.exe .\\macro.exe && electron-builder"
+    "build-win": "(if exist .\\client\\dist rmdir /s /q .\\client\\dist) && (if not exist .\\server\\src mkdir .\\server\\src) && xcopy /E /I /Y ..\\client\\dist .\\client\\dist && xcopy /E /I /Y ..\\server\\shared .\\server\\shared && copy /Y ..\\server\\src\\Store.js .\\server\\src\\ && copy /Y ..\\server\\src\\SerialHandler.js .\\server\\src\\ && copy /Y ..\\server\\src\\config.js .\\server\\src\\ && copy /Y ..\\server\\src\\AuthStore.js .\\server\\src\\ && copy /Y ..\\server\\dist\\macro.exe .\\macro.exe && electron-builder"
   },
   "dependencies": {
     "@serialport/parser-readline": "^13.0.0",

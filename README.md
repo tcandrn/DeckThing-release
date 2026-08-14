@@ -50,6 +50,12 @@ The firmware sends `BTN_` followed by the Arduino pin number, so pin 2 arrives a
 
 ## **Install**
 
+Download the installer from the [Releases](https://github.com/tcandrn/DeckThing-release/releases) page and run it. Nothing else is needed: the macro engine is bundled, so Python does not have to be installed.
+
+The installer is not code signed, so Windows SmartScreen will warn about an unrecognised publisher. Choose More info, then Run anyway.
+
+### **Build from source**
+
 Requires Node.js 22.12 or newer, because Electron 43 does, and Python between 3.10 and 3.14. PyInstaller does not yet support 3.15.
 
 ```bash

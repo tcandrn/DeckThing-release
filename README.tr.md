@@ -50,6 +50,12 @@ Firmware, `BTN_` ifadesinin ardından Arduino pin numarasını gönderir; yani p
 
 ## **Kurulum**
 
+Yükleyiciyi [Releases](https://github.com/tcandrn/DeckThing-release/releases) sayfasından indirip çalıştırın. Başka bir şey gerekmez: makro motoru pakete dahildir, bu yüzden Python'un kurulu olması şart değildir.
+
+Yükleyici imzalanmamıştır; bu nedenle Windows SmartScreen tanınmayan yayıncı uyarısı verir. Daha fazla bilgi, ardından Yine de çalıştır seçeneğini seçin.
+
+### **Kaynaktan Derleme**
+
 Electron 43 gerektirdiği için Node.js 22.12 veya üstü, ayrıca 3.10 ile 3.14 arasında bir Python gerekir. PyInstaller henüz 3.15'i desteklemiyor.
 
 ```bash
