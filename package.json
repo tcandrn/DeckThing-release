@@ -17,7 +17,7 @@
     "test": "npm --prefix server test",
     "test:python": "node scripts/python.js server/test_macro.py",
     "engine": "node scripts/python.js --cwd server -m PyInstaller --onefile --noconsole --name macro macro.py",
-    "package": "npm run build && npm --prefix electron-builder run build-win"
+    "package": "npm run engine && npm run build && npm --prefix electron-builder run build-win"
   },
   "devDependencies": {
     "concurrently": "^9.2.1"

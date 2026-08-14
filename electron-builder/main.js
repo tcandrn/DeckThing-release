@@ -4,7 +4,7 @@ const fs = require('fs');
 const { spawn } = require('child_process');
 
 function requireServerModule(name) {
-  const bundled = path.join(__dirname, 'server', 'src', name);
+  const bundled = path.join(__dirname, 'server', 'src', `${name}.js`);
   if (fs.existsSync(bundled)) return require(bundled);
   return require(path.join(__dirname, '..', 'server', 'src', name));
 }

@@ -104,10 +104,6 @@ export default function Login() {
                         </button>
                     </div>
                 </form>
-
-                <div className="mt-8 border-t border-emerald-800/40 pt-4 flex justify-between text-xs text-emerald-700 font-bold">
-                    <span>Runs on your local network</span>
-                </div>
             </div>
         </div>
     );
